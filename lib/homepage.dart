@@ -59,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         color: Color(0xFF59D5E0), // Label text color
                         fontSize: 18,
+                        fontFamily: 'fontBold',
                       ),
                     ),
                     style: ElevatedButton.styleFrom( 
@@ -86,6 +87,35 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         color: Color(0xFF59D5E0), // Label text color
                         fontSize: 18,
+                        fontFamily: 'fontBold',
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom( 
+                      textStyle: TextStyle(fontSize: 20),
+                      
+                    ),
+                  ),
+                ),
+
+                SizedBox(height: 10.0),
+
+                SizedBox(
+                  width: 250,
+                  height: 50,
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      print('Button pressed');
+                    },
+                    icon: Icon(
+                      Icons.webhook,
+                      color: Color(0xFF59D5E0),
+                    ),
+                    label: Text(
+                      'ABOUT',
+                      style: TextStyle(
+                        color: Color(0xFF59D5E0), // Label text color
+                        fontSize: 18,
+                        fontFamily: 'fontBold',
                       ),
                     ),
                     style: ElevatedButton.styleFrom( 
@@ -96,13 +126,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 
                 
-                SizedBox(height: 30.0),
+                SizedBox(height: 50),
 
                 Text(
                   'Develop by Rumar Pamparo',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 12,
+                    fontSize: 15,
+                    fontFamily: 'fontBold',
+                  )
+                ),
+                Text(
+                  '@All Rights Reserved 2024',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 10,
                     fontFamily: 'fontBold',
                   )
                 )
